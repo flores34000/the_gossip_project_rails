@@ -1,12 +1,8 @@
-THE GOSSIP PROJECT
+Projet : Gossip Project : Facebook style
 
-
-Nous allons commencer aujourd'hui par créer les premières pages :
-
-La page d'accueil, bien entendu. Cette page d'accueil affichera tous les potins créés
-La page qui présente l'équipe de The Gossip Project, aka toi et ton binome
-La page de contact où tu vas balancer une superbe adresse de contact
-Une page de bienvenue, qui accueille l'utilisateur en fonction du nom passé dans l'URL
-Dans la page d'accueil, il sera possible de cliquer sur chaque potin pour en "Voir plus", ce qui aura pour effet d'aller sur la page du potin.
-
-Enfin, puisque c'est toi, nous allons mettre du CSS dans le site, grâce notamment à Bootstrap.
+Nous allons commencer par un CRUD succinct des utilisateurs : création
+Nous allons mettre en place un système de login / logout avec une page de connexion
+Nous allons faire en sorte que les potins créés soient associés à l'utilisateur en cours, idem pour les commentaires
+Nous allons rendre impossible la création de potin si l'utilisateur n'est pas connecté. Idem pour show du potin
+Édition et destruction des potins
+Puis nous allons mettre en place le système de likes

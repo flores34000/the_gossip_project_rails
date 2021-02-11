@@ -1,0 +1,20 @@
+
+
+  <div class="container container_create">
+<div class="card contact_card card_create" 
+<%= form_tag gossips_path, method: "post" do %>
+  <%= label_tag 'TITRE' %>
+  <%= text_field_tag 'title', @gossip.title %> 
+  <br /> <br />
+
+  <%= label_tag 'Le gossip'  %>
+  <%= text_area_tag 'content', @gossip.content %> 
+  
+  
+
+ 
+
+<% end %>
+
+</div>
+</div>

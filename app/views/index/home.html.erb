@@ -1,0 +1,36 @@
+<div class="container">
+
+
+<div class="creer_gossip">
+<h2 class="titre_gossip">TU PEUX CREER TON GOSSIP</h2>
+    <%= link_to "ICI", new_gossip_path, class: "btn btn-primary btn_fait_ton_goosip " %>        
+</div>
+
+<p class="para_juste">OU JUSTE REGARDER LA</p>
+
+<h1 class="titre_gossips_list">GOSSIPS LIST</h1>
+
+<div class="card-columns z_index">
+<% @gossips.each_with_index do |gossip, index| %>
+  <div>
+
+
+    <div class="card " 
+    style="background-color: rgb(235, 245, 245);">
+
+    <div class="card-body">
+    
+    <h3> NAME: </h4> <p class="taille_police"><%= gossip.user.last_name%></p>
+    <h3> TITLE:</h4> <p class="taille_police"><%= gossip.title %>       </p>
+    <h3> AJOUT:</h4> <p class="taille_police"><%= gossip.created_at %>  </p>
+        
+    
+    
+    <%= link_to "READ", edit_gossip_path(gossip.id), class: "btn btn-primary btn_read"%>    
+    <%= link_to "DELETE", gossip_path(gossip.id), method: :delete, data: {confirm: "Êtes-vous sûr?"}, class: "btn btn_color" %>     
+    </div>
+    </div>
+
+  <% end %>
+</div>
+</div>

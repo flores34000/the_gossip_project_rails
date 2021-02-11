@@ -13,31 +13,113 @@
  *= require_tree .
  *= require_self
  */
+.css_lien_navbarre{
+    margin-right: 20px;
+    color: #177eff;
+    font-size: 25px;
+}
+.titre_gossips_list{
+    text-align: center;
+    margin: 30px  0;
+    color: #6c757d;
+    font-size: 70px;
+    font-weight: 800;
 
- html{
-    background-color: rgb(235, 245, 245);
-    width: 100%;
-    /* height: 100vh; */
-    
+
 }
 
-.divteam{
-    background-color: rgb(235, 245, 245);
+.taille_police{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #6c757d;
+}
+h3{
+    color: #177eff;
+}
+
+.btn_read{
+    margin-right: 50%;
+  
+}
+.btn_color{
+    background-color: rgba(255, 0, 0, 0.397);
+    color: #05050591;
+    font-weight: 600;
+}
+.creer_gossip{
+    text-align: center;
+    margin: 80px;
+    padding-top: 150px;
+    
+}
+.btn_fait_ton_goosip{
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: 800;
+}
+.titre_gossip{
+    font-size: 50px;
+    color: #6c757d;
+}
+.para_juste{
+    font-size: 50px;
+    color: #6c757d;
+    text-align: center;
+    font-weight: 500;
+}
+.navbar-brand{
+    margin-right: 25px;
+    font-weight: 800;
+    font-size: x-large;
+}
+/* team ********************************* */
+.container_team{
+    height: 70vh;
     width: 100%;
-    height: 80vh;
-    color: rgb(24, 56, 5);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.jumbotron{
-    background-color: rgb(235, 245, 245);
-}
-.contact{
-    height: 100vh;
-    margin-left: 25%;
-  
+    font-size: xx-large;
+    text-align: center;
     
+
+}
+/* contact************************* */
+.contact{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 30%;  
+    
+}
+.contact_card{
+    height: 700px;
+    width: 700px;
+}
+/* create gossip*************** */
+.card_create{
+    text-align: center;
+    background-color: rgb(235, 245, 245);
+    padding: 30px 10px;
+}
+.container_create{
+    padding: 150px 180px;
+    color: #6c757d;
+    font-size: 30px;
+}
+.btn_centre{
+    text-align: center;
+}
+.barre{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+}
+.z_index{
+    z-index: 0;
 }

@@ -1,0 +1,22 @@
+
+<div class="container container_create">
+<div class="card contact_card card_create" 
+<%= form_tag gossips_path, method: "post" do %>
+  <%= label_tag 'Ton titre' %>
+  <%= text_field_tag 'title', @gossip.title %> 
+  <br /> <br />
+
+  <%= label_tag 'Ton contenu'  %>
+  <%= text_area_tag 'content', @gossip.content %> 
+  <br /> 
+  <p >Et tu </p>
+  <br />
+
+  <%= submit_tag "VALIDE" %>
+
+<% end %>
+
+</div>
+</div>
+
+
